@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Develop a Domain Model</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="Develop a Domain Model">
+<meta name="uma.presentationName" content="Develop a Domain Model">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_P3BkAQuuEe-KNZeel9MAgA&path=_P3BkAQuuEe-KNZeel9MAgA,_atPCMQ_YEe-XRJQJ8FX8Ug';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_atPCMQ_YEe-XRJQJ8FX8Ug"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Develop a Domain Model</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+<tr>
+<td valign="top">Extends: <a href="./../../Business Model/capabilitypatterns/Develop a Domain Model_A125F872.html" guid="_FzMRMQ_YEe-XRJQJ8FX8Ug">Develop a Domain Model</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../Business Model/deliveryprocesses/Develop a Domain Model_2F94AEFF.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../Business Model/deliveryprocesses/Develop a Domain Model_2F94AEFF.html_wbs.html"><span style="white-space:nowrap;">Work Breakdown Structure</span></a></td><td width="1"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Team Allocation</span></td><td width="21"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../Business Model/deliveryprocesses/Develop a Domain Model_2F94AEFF.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="4"><img src="./../../images/shim.gif" alt="" title="" height="2"></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="3"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Team Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Team Breakdown", summary: "Team Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["model_info", "Model Info"],
+["teams", "Team"],
+["type", "Type"],
+["is_planned", "Planned"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_optional", "Optional"]],
+rows: [
+
+{id: "50f919ea", parentId: "", relPath: ",_RyLywQ_YEe-XRJQJ8FX8Ug", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "business_designer", title: "Business Designer", url: "./../../Business Model/roles/business_designer_1BB32897.html", 
+	predecessors: "", info: "", type: "Role", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a3a076bb", parentId: "50f919ea", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_entity", title: "Business Entity", url: "./../../Business Model/workproducts/business_entity_E4538203.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a1c76768", parentId: "50f919ea", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_object_model", title: "Business Object Model", url: "./../../Business Model/workproducts/business_object_model_A9A40639.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "532d1134", parentId: "50f919ea", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_use-case_realization", title: "Business Use-Case Realization", url: "./../../Business Model/workproducts/business_use-case_realization_13FB3B30.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b061d884", parentId: "50f919ea", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_worker", title: "Business Worker", url: "./../../Business Model/workproducts/business_worker_129B7A41.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ac6c3fc0", parentId: "50f919ea", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "organization_unit", title: "Organization Unit", url: "./../../Business Model/workproducts/organization_unit_FBCBFE79.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b31de842", parentId: "50f919ea", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "detail_a_business_entity", title: "Detail a Business Entity", url: "./../../Business Model/tasks/detail_a_business_entity_CBBBCAF6.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b3077698", parentId: "50f919ea", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "find_business_workers_and_entities", title: "Find Business Workers and Entities", url: "./../../Business Model/tasks/find_business_workers_and_entities_BA0E92CA.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "fc6ef45c", parentId: "", relPath: ",_I-Ya0Q_YEe-XRJQJ8FX8Ug", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "business_process_analyst", title: "Business_Process_Analyst", url: "./../../Business Model/roles/business_process_analyst_828E60AA.html", 
+	predecessors: "", info: "", type: "Role", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a55f408b", parentId: "fc6ef45c", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_glossary", title: "Business Glossary", url: "./../../Business Model/workproducts/business_glossary_AD48422C.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a0d6f344", parentId: "fc6ef45c", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "business_rules", title: "Business Rules", url: "./../../Business Model/workproducts/business_rules_CF23E573.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "b087338e", parentId: "fc6ef45c", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "capture_a_common_business_vocabulary", title: "Capture a Common Business Vocabulary", url: "./../../Business Model/tasks/capture_a_common_business_vocabulary_5E82697C.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "51b1ef8e", parentId: "fc6ef45c", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "maintain_business_rules", title: "Maintain_Business_Rules", url: "./../../Business Model/tasks/maintain_business_rules_485A363F.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a2d2d0ea", parentId: "", relPath: ",_Nh_I4Q_YEe-XRJQJ8FX8Ug", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "business-model_reviewer", title: "Business-Model Reviewer", url: "./../../Business Model/roles/business-model_reviewer_C12C9E7B.html", 
+	predecessors: "", info: "", type: "Role", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ab76c16a", parentId: "a2d2d0ea", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "review_record", title: "Review Record", url: "./../../Business Model/workproducts/review_record_96E05876.html", 
+	predecessors: "", info: "Modifies", type: "Artifact", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "a61e7285", parentId: "a2d2d0ea", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "review_the_business_object_model", title: "Review the Business Object Model", url: "./../../Business Model/tasks/review_the_business_object_model_51325CFB.html", 
+	predecessors: "", info: "Performs as Owner", type: "Task", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>
